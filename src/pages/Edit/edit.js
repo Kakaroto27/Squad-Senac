@@ -3,7 +3,7 @@ import axios from "axios";
 
 import Header from "../../components/Header/Header";
 
-import { useNavigate} from "react-router-dom";
+import { useNavigate, useParams} from "react-router-dom";
 
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -17,6 +17,8 @@ const validationPost = yup.object().shape({
 
 function Edit() {
 
+    const { id } = useParams()
+
     const navigate = useNavigate();
 
     const addPost = data => axios.post("https://churrascaria-cpx.onrender.com/carnes", data)
@@ -29,7 +31,7 @@ function Edit() {
         console.log("DEU ERRADO")
     })
 
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const { register, handleSubmit, formState: { errors }, reset } = useForm({
         resolver: yupResolver(validationPost)
     })
     
