@@ -1,6 +1,8 @@
 import React from "react";
 import axios from "axios";
 
+import { useNavigate} from "react-router-dom";
+
 import { Link } from "react-router-dom"
 
 import Header from "../../components/Header/Header";
@@ -19,6 +21,8 @@ const validationPost = yup.object().shape({
 
 function Post() {
 
+    const navigate = useNavigate();
+
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(validationPost)
     })
@@ -26,6 +30,8 @@ function Post() {
     const addPost = data => axios.post("https://churrascaria-cpx.onrender.com/carnes", data)
     .then(() => {
         console.log("Deu tudo certo")
+        navigate('/');
+        
     })
     .catch(() => {
         console.log("DEU ERRADO")
