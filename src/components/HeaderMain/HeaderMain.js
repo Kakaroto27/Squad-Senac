@@ -16,13 +16,13 @@ function HeaderMain() {
                 <div className="btn-newPost" >
 
                     <Link to="/post" >
-                        <button>Add new Post</button>
+                        <button>Adicionar nova postagem</button>
                     </Link>
 
                 </div>
             </div>
         </header>
     )
-}
+};
 
-export default HeaderMain
+export default HeaderMain;

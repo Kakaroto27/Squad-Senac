@@ -83,4 +83,4 @@ function Edit() {
     )
 }
 
-export default Edit
+export default Edit;
