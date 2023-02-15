@@ -13,7 +13,7 @@ const Footer = () => {
         <Col lg='3' md='4' sm='6'>
           <div className=" footer__logo text-start">
             <img src={logo} alt="logo" />
-            <h5></h5>
+            <h5>{" "}</h5>
 
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -24,7 +24,7 @@ const Footer = () => {
         </Col>
 
         <Col lg='3' md='4' sm='6'>
-          <h5 className="footer__title">Delivery Time</h5>
+          <h5 className="footer__title">Horário de entrega</h5>
           <ListGroup className="delivery__time-list">
             <ListGroupItem className="delivery__time-item border-0 ps-0">
               <span>Quinta - Domingo </span>
@@ -41,7 +41,7 @@ const Footer = () => {
         </Col>
 
         <Col lg='3' md='4' sm='6'>
-        <h5 className="footer__title">Contact</h5>
+        <h5 className="footer__title">Contato</h5>
           <ListGroup className="delivery__time-list">
 
           <ListGroupItem className="delivery__time-item border-0 ps-0">
@@ -66,7 +66,7 @@ const Footer = () => {
           <div className="newsletter">
             <input type="email" placeholder="Digite seu e-mail" />
             <span>
-              <i class="ri-send-plane-line"></i>
+              <i className="ri-send-plane-line"></i>
             </span>
           </div>
         </Col>
@@ -84,28 +84,28 @@ const Footer = () => {
             <span>
               {" "}
               <Link to=''>
-                <i class="ri-facebook-line"></i>
+                <i className="ri-facebook-line"></i>
               </Link>
             </span>
 
             <span>
               {" "} 
               <Link to=''>
-                <i class="ri-github-line"></i>
+                <i className="ri-github-line"></i>
               </Link>
             </span>
 
             <span> 
               {" "}
               <Link to=''>
-                <i class="ri-instagram-line"></i>
+                <i className="ri-instagram-line"></i>
               </Link>
             </span>
 
             <span> 
               {" "}
               <Link to=''>
-                <i class="ri-linkedin-line"></i>
+                <i className="ri-linkedin-line"></i>
               </Link>
             </span>
 
@@ -114,6 +114,6 @@ const Footer = () => {
       </Row>
     </Container>
   </footer>
-}
+};
 
-export default Footer
+export default Footer;

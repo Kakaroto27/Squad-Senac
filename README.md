@@ -1,7 +1,6 @@
-Churrasqueada CPX
-Site de delivery de churrasco e bebidas.
+# Churrasqueada CPX
 
-
+Site de Churrascaria e Delivery.
 
 
 # Getting Started with Create React App
